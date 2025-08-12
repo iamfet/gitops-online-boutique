@@ -12,15 +12,15 @@ spec:
         name: http-80
         protocol: HTTP
       hosts:
-        - "*"
-      tls:
-        httpsRedirect: true
+        - "*.fetdevops.com"
+#      tls:
+#        httpsRedirect: true
     - port:
         number: 443
         name: https-443
         protocol: HTTPS
       hosts:
-        - "*"
+        - "*.fetdevops.com"
       tls:
         mode: SIMPLE
         credentialName: gateway-tls
